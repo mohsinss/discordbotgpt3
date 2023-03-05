@@ -40,7 +40,7 @@ async def on_message(message):
         response = openai.Completion.create(
             engine="text-ada-001",
             prompt=f"{message.content}",
-            max_tokens=2048,
+            max_tokens=2000,
             temperature=0.5,
         )
 

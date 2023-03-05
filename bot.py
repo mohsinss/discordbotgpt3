@@ -38,7 +38,7 @@ async def on_message(message):
 
         # Use the OpenAI API to generate a response to the message
         response = openai.Completion.create(
-            engine="text-davinci-003",
+            engine="text-ada-001",
             prompt=f"{message.content}",
             max_tokens=2048,
             temperature=0.5,

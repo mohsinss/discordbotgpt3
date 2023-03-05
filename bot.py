@@ -1,11 +1,10 @@
 # bot.py
-import discord
 import os
+import discord
 import openai
 from dotenv import load_dotenv
 
 load_dotenv()
-
 TOKEN = os.getenv('DISCORD_TOKEN')
 OPENAI_KEY = os.getenv('OPENAI_KEY')
 
